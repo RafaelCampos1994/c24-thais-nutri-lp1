@@ -15,11 +15,7 @@ export const About: React.FC = () => {
                 <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-brand-900/20 border-8 border-white">
                     {/* PHOTO: Sitting pose */}
                     <img 
-                        src="./thais-about.png"
-                        onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?q=80&w=1974&auto=format&fit=crop";
-                            e.currentTarget.alt = "Placeholder (Save image as thais-about.png)";
-                        }}
+                        src="/foto-de-thais-empatica-02.jpg"
                         alt="Nutricionista Thais Bertocco" 
                         className="w-full h-auto object-cover"
                     />
@@ -56,7 +52,7 @@ export const About: React.FC = () => {
 
             <Reveal delay={0.2}>
                 <div className="mt-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                    <Button variant="primary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                    <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
                         Agendar minha consulta
                     </Button>
                     

@@ -48,10 +48,10 @@ export const FAQ: React.FC = () => {
           ))}
         </div>
 
-        <Reveal delay={0.3}>
+        <Reveal delay={0.3} width="100%">
             <div className="flex flex-col items-center gap-4">
                 <p className="text-slate-500 text-sm">Ainda com dúvida? Me chame no WhatsApp.</p>
-                <Button variant="ghost" className="text-brand-600 hover:bg-brand-50" onClick={() => window.open('https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento', '_blank')}>
+                <Button variant="secondary" onClick={() => window.open('https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento', '_blank')}>
                     <MessageCircle className="w-4 h-4" />
                     Falar com a equipe
                 </Button>

@@ -51,7 +51,7 @@ export const PainPoints: React.FC = () => {
             
             <Reveal delay={0.3}>
                 <div className="mt-10">
-                    <Button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                    <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
                         Quero agendar minha conversa <ArrowRight className="w-4 h-4" />
                     </Button>
                 </div>

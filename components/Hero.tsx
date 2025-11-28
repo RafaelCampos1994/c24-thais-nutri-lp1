@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
                     </div>
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-400/30 bg-gold-500/10 backdrop-blur-md">
                         <Anchor className="w-3 h-3 text-gold-400" />
-                        <span className="text-gold-300 font-semibold tracking-wider text-xs uppercase">Método Âncora</span>
+                        <span className="text-gold-300 font-semibold tracking-wider text-xs uppercase">Método ÂNCORA</span>
                     </div>
                 </div>
                 </Reveal>
@@ -84,13 +84,8 @@ export const Hero: React.FC = () => {
                         <div className="absolute top-20 right-10 lg:right-20 w-[300px] h-[300px] bg-gradient-to-tr from-brand-400 to-brand-600 rounded-full blur-[80px] opacity-40 animate-pulse-slow"></div>
                         
                         {/* PHOTO: Standing with crossed arms */}
-                        {/* Note: In a real environment, ensure the file is named correctly. Using the uploaded image representation. */}
                         <img 
-                            src="./thais-hero.png" 
-                            onError={(e) => {
-                                e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop";
-                                e.currentTarget.alt = "Placeholder (Save image as thais-hero.png)";
-                            }}
+                            src="/foto-de-thais-empatica-01.jpg" 
                             alt="Nutricionista Thais Bertocco"
                             className="relative z-10 w-auto h-[450px] lg:h-[650px] object-cover drop-shadow-2xl"
                             style={{ 

@@ -58,7 +58,7 @@ export const Methodology: React.FC = () => {
           <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-brand-100 via-brand-200 to-brand-100 -z-0 transform translate-y-4"></div>
 
           {steps.map((step, idx) => (
-            <Reveal key={step.id} delay={idx * 0.15}>
+            <Reveal key={step.id} delay={idx * 0.15} width="100%">
               <div className="relative z-10 group h-full flex flex-col">
                 {/* Number Badge */}
                 <div className={`w-24 h-24 mx-auto bg-gradient-to-br ${step.color} rounded-2xl rotate-3 shadow-xl shadow-gray-200 flex items-center justify-center mb-8 transform transition-transform duration-500 group-hover:-rotate-3 group-hover:scale-110`}>
@@ -85,7 +85,7 @@ export const Methodology: React.FC = () => {
                 <p className="text-lg text-brand-800 font-serif italic max-w-2xl mx-auto bg-brand-50 p-8 rounded-xl border border-brand-100 text-center">
                     "O plano deve respeitar sua rotina, seus gostos e seu momento de vida sem terrorismo nutricional."
                 </p>
-                <Button variant="primary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
                     Quero começar minha jornada
                 </Button>
             </div>
