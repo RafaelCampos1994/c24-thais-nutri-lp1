@@ -23,16 +23,15 @@ export const Hero: React.FC = () => {
             <img 
                 src="https://i.postimg.cc/7ZCX7K6b/foto-de-thais-empatica-01.jpg" 
                 alt="Nutricionista Thais Bertocco"
-                // Ajuste: w-full para preencher tudo. 
-                // object-[center_20%] no mobile (mantido).
-                // md:object-[right_20%] no desktop para garantir que ela fique na direita.
-                className="w-full h-full object-cover object-[center_20%] md:object-[right_20%] opacity-90 md:opacity-100"
+                // Ajuste: Reduzida a opacidade no desktop (md:opacity-90) para escurecer a imagem levemente.
+                // Mantido o posicionamento md:object-[30%_20%] para enquadramento.
+                className="w-full h-full object-cover object-[center_20%] md:object-[30%_20%] opacity-90 md:opacity-90"
             />
             
             {/* Gradient Masks */}
             
-            {/* Desktop: Gradient ajustado para cobrir o texto na esquerda agora que a imagem é full width */}
-            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 from-0% via-brand-950/50 via-45% to-transparent"></div>
+            {/* Desktop: Gradient intensificado (via-brand-950/95) para garantir leitura do texto */}
+            <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-950 from-20% via-brand-950/95 via-55% to-transparent"></div>
             
             {/* Mobile: Horizontal Gradient + Bottom fade (Mantido original) */}
             <div className="md:hidden absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/60 to-transparent"></div>
