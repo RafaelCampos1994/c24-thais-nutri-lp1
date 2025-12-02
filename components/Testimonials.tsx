@@ -4,6 +4,8 @@ import { Button } from './Button';
 import { ArrowRight } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+
   // Assuming images are stored in public/Depoimentos/
   const testimonialImages = [
     '/Depoimentos/depoimento-01.jpg',
@@ -80,7 +82,7 @@ export const Testimonials: React.FC = () => {
 
         <Reveal delay={0.3} width="100%">
             <div className="flex justify-center w-full">
-                <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
                     Quero ter resultados assim <ArrowRight className="ml-2 w-4 h-4"/>
                 </Button>
             </div>

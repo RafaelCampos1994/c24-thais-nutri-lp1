@@ -4,6 +4,8 @@ import { Reveal } from './Reveal';
 import { ChevronDown, Anchor } from 'lucide-react';
 
 export const Hero: React.FC = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+
   return (
     <section className="relative min-h-[90vh] md:min-h-[95vh] flex items-center overflow-hidden bg-brand-950">
       
@@ -70,7 +72,7 @@ export const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-5">
                 <Button 
                     variant="secondary" 
-                    onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
+                    onClick={() => window.open(whatsappLink, '_blank')}
                 >
                     Conversar sobre meu plano
                 </Button>

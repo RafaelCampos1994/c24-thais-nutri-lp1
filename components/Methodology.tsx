@@ -4,6 +4,8 @@ import { Button } from './Button';
 import { Anchor, Map, Compass, Home } from 'lucide-react';
 
 export const Methodology: React.FC = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+
   const steps = [
     {
       id: 1,
@@ -90,7 +92,7 @@ export const Methodology: React.FC = () => {
                 <p className="text-lg text-brand-800 font-serif italic max-w-2xl mx-auto bg-brand-50 p-8 rounded-xl border border-brand-100">
                     "O plano deve respeitar sua rotina, seus gostos e seu momento de vida sem terrorismo nutricional."
                 </p>
-                <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
                     Quero começar minha jornada
                 </Button>
             </div>

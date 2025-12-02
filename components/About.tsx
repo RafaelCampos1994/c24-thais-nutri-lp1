@@ -4,6 +4,8 @@ import { Button } from './Button';
 import { MapPin, Instagram } from 'lucide-react';
 
 export const About: React.FC = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+
   return (
     <section className="py-24 bg-gradient-to-br from-white to-brand-50 overflow-hidden">
       <div className="container mx-auto px-6">
@@ -52,7 +54,7 @@ export const About: React.FC = () => {
 
             <Reveal delay={0.2}>
                 <div className="mt-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                    <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                    <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
                         Agendar minha consulta
                     </Button>
                     

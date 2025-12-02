@@ -4,6 +4,8 @@ import { Button } from './Button';
 import { Clock, Ban, Coffee, Heart, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
 
 export const PainPoints: React.FC = () => {
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5511930212525&text=Ol%C3%A1%20Thais,%20vi%20um%20an%C3%BAncio%20seu%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20acompanhamento";
+
   return (
     <section className="py-24 bg-brand-50 relative overflow-hidden">
       {/* Background Decor */}
@@ -11,48 +13,49 @@ export const PainPoints: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         
-        {/* --- PART 1: RESTORED "ROUTINE" SECTION --- */}
+        {/* --- PART 1: RESTORED "ROUTINE" SECTION (FULLY CENTRALIZED) --- */}
         <Reveal>
-          <div className="max-w-4xl mx-auto text-center mb-16">
-             <h2 className="font-serif text-4xl md:text-5xl text-brand-950 font-bold mb-6 leading-tight">
+          <div className="max-w-4xl mx-auto text-center mb-16 flex flex-col items-center">
+             <h2 className="font-serif text-4xl md:text-5xl text-brand-950 font-bold mb-6 leading-tight text-center">
                 Chega de dietas que não respeitam <span className="text-brand-600 italic">sua rotina.</span>
              </h2>
-             <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+             <p className="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8 text-center">
                 Enquanto boa parte dos nutricionistas ainda entrega um cardápio pronto e espera
                 que você se adapte, <strong className="text-brand-700">eu faço o caminho inverso.</strong>
              </p>
 
-             <div className="bg-white rounded-r-3xl rounded-bl-3xl border-l-4 border-brand-500 p-8 shadow-md max-w-2xl mx-auto mb-12 relative">
+             <div className="bg-white rounded-r-3xl rounded-bl-3xl border-l-4 border-brand-500 p-8 shadow-md max-w-2xl mx-auto mb-12 relative text-center">
                 <p className="text-xl font-serif italic text-brand-800">
                     "Não é você que tem que se encaixar na dieta..."
                 </p>
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-brand-100 rounded-full blur-2xl opacity-50 -z-10"></div>
              </div>
 
-             <p className="text-slate-600 mb-8">
+             <p className="text-slate-600 mb-8 text-center">
                 Antes de pensar no que entra no seu prato, eu penso no que existe na sua rotina:
              </p>
 
-             <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
-                <div className="flex items-center gap-3 bg-white p-4 rounded-xl border border-brand-100 shadow-sm">
-                    <Clock className="w-5 h-5 text-brand-500" />
+             {/* Grid Items Centered: flex-col and text-center inside items */}
+             <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10 w-full">
+                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                    <Clock className="w-8 h-8 text-brand-500 mb-1" />
                     <span className="font-semibold text-brand-800">Seus horários</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white p-4 rounded-xl border border-brand-100 shadow-sm">
-                    <Ban className="w-5 h-5 text-brand-500" />
+                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                    <Ban className="w-8 h-8 text-brand-500 mb-1" />
                     <span className="font-semibold text-brand-800">Seus desafios</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white p-4 rounded-xl border border-brand-100 shadow-sm">
-                    <Coffee className="w-5 h-5 text-brand-500" />
+                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                    <Coffee className="w-8 h-8 text-brand-500 mb-1" />
                     <span className="font-semibold text-brand-800">Seus hábitos</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white p-4 rounded-xl border border-brand-100 shadow-sm">
-                    <Heart className="w-5 h-5 text-brand-500" />
+                <div className="flex flex-col items-center text-center gap-3 bg-white p-6 rounded-xl border border-brand-100 shadow-sm hover:shadow-md transition-shadow">
+                    <Heart className="w-8 h-8 text-brand-500 mb-1" />
                     <span className="font-semibold text-brand-800">Seus gostos</span>
                 </div>
              </div>
 
-             <Button variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+             <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
                 Quero agendar minha conversa <ArrowRight className="w-4 h-4" />
              </Button>
           </div>
@@ -143,7 +146,7 @@ export const PainPoints: React.FC = () => {
                     </ul>
                     
                     <div className="mt-8 text-center">
-                        <Button fullWidth variant="secondary" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
+                        <Button fullWidth variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
                             Quero viver essa experiência
                         </Button>
                     </div>
