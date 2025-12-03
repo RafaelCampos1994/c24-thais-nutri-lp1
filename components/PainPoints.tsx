@@ -64,7 +64,7 @@ export const PainPoints: React.FC = () => {
                 {/* --- PART 2: NEW COMPARISON SECTION --- */}
                 <div className="mt-24 md:mt-32">
                     <Reveal width="100%">
-                        <div className="text-center mb-16 flex flex-col items-center">
+                        <div className="text-center mb-8 flex flex-col items-center">
                             <h2 className="font-serif text-3xl md:text-5xl text-brand-950 font-bold mb-4">
                                 Por que o Método Âncora é diferente?
                             </h2>
@@ -73,7 +73,7 @@ export const PainPoints: React.FC = () => {
                     </Reveal>
 
                     {/* Added padding wrapper to prevent shadows from being clipped by Reveal or container */}
-                    <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-stretch p-4">
+                    <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-stretch p-4">
 
                         {/* Card: Tradicional / Convênio */}
                         <div className="h-full">

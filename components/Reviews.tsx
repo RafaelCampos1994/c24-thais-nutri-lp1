@@ -69,11 +69,8 @@ export const Reviews: React.FC = () => {
                 <div className="text-center mb-16 flex flex-col items-center">
                     <Reveal width="100%">
                         <h2 className="font-serif text-3xl md:text-5xl text-brand-950 font-bold mb-6 text-center">
-                            O que dizem <span className="text-brand-500">sobre mim</span>
+                            Feedbacks de quem já está <span className="text-brand-500">tendo resultados!</span>
                         </h2>
-                        <p className="text-slate-600 text-lg max-w-2xl mx-auto text-center">
-                            Feedbacks reais de quem já transformou a relação com a comida e conquistou seus objetivos.
-                        </p>
                     </Reveal>
                 </div>
 
