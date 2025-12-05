@@ -73,7 +73,11 @@ export const Hero: React.FC = () => {
                         <div className="flex flex-col sm:flex-row gap-5">
                             <Button
                                 variant="secondary"
-                                onClick={() => window.open(whatsappLink, '_blank')}
+                                onClick={() => {
+                                    window.dataLayer = window.dataLayer || [];
+                                    window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'hero_section' });
+                                    window.open(whatsappLink, '_blank');
+                                }}
                             >
                                 Falar com a Nutri Agora!
                             </Button>
