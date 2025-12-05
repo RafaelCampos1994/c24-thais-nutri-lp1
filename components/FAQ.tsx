@@ -86,7 +86,7 @@ const FaqAccordion: React.FC<{ item: FaqItem }> = ({ item }) => {
         </div>
       </button>
       <div
-        className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-48 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`px-6 overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <p className="text-slate-600 leading-relaxed border-t border-brand-200/50 pt-4">{item.answer}</p>
       </div>

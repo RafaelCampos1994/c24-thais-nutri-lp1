@@ -8,9 +8,9 @@ export const Testimonials: React.FC = () => {
 
     // Using only Depoimento 01, 02, and 03
     const testimonialImages = [
-        '/Depoimentos/Depoimento 01.jpeg',
-        '/Depoimentos/Depoimento 02.jpeg',
-        '/Depoimentos/Depoimento 03.jpeg',
+        '/Depoimentos/Depoimento 01.webp',
+        '/Depoimentos/Depoimento 02.webp',
+        '/Depoimentos/Depoimento 03.webp',
     ];
 
     // Duplicate images enough times to ensure seamless scrolling on large screens
