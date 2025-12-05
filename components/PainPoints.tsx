@@ -62,7 +62,7 @@ export const PainPoints: React.FC = () => {
                 </Reveal>
 
                 {/* --- PART 2: NEW COMPARISON SECTION --- */}
-                <div className="mt-24 md:mt-32">
+                <div id="comparison" className="mt-24 md:mt-32">
                     <Reveal width="100%">
                         <div className="text-center mb-8 flex flex-col items-center">
                             <h2 className="font-serif text-3xl md:text-5xl text-brand-950 font-bold mb-4">

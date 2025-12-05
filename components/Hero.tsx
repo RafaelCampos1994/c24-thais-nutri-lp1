@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
                             <Button
                                 variant="outline"
                                 className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm shadow-lg"
-                                onClick={() => document.getElementById('methodology')?.scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => document.getElementById('comparison')?.scrollIntoView({ behavior: 'smooth' })}
                             >
                                 Conheça o Método
                             </Button>
