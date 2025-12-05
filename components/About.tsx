@@ -54,7 +54,15 @@ export const About: React.FC = () => {
 
                         <Reveal delay={0.2}>
                             <div className="mt-10 flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-                                <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
+                                <Button
+                                    variant="secondary"
+                                    href={whatsappLink}
+                                    target="_blank"
+                                    onClick={() => {
+                                        window.dataLayer = window.dataLayer || [];
+                                        window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'about_section' });
+                                    }}
+                                >
                                     Agendar minha consulta
                                 </Button>
 

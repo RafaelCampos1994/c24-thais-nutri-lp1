@@ -55,7 +55,15 @@ export const PainPoints: React.FC = () => {
                             </div>
                         </div>
 
-                        <Button variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
+                        <Button
+                            variant="secondary"
+                            href={whatsappLink}
+                            target="_blank"
+                            onClick={() => {
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'pain_points_section' });
+                            }}
+                        >
                             Falar com a Nutri Agora
                         </Button>
                     </div>
@@ -160,7 +168,16 @@ export const PainPoints: React.FC = () => {
                                         </ul>
 
                                         <div className="mt-8 text-center">
-                                            <Button fullWidth variant="secondary" onClick={() => window.open(whatsappLink, '_blank')}>
+                                            <Button
+                                                fullWidth
+                                                variant="secondary"
+                                                href={whatsappLink}
+                                                target="_blank"
+                                                onClick={() => {
+                                                    window.dataLayer = window.dataLayer || [];
+                                                    window.dataLayer.push({ 'event': 'clique_whatsapp', 'local': 'pain_points_section_bottom' });
+                                                }}
+                                            >
                                                 Quero viver essa experiência
                                             </Button>
                                         </div>
